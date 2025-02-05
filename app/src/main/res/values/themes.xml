@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TheCheezery" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/very_pruple</item>
+        <item name="colorPrimaryVariant">@color/less_pruple</item>
+        <item name="colorOnPrimary">@color/dusty_white</item>
+
+        <item name="colorSecondary">@color/pinky</item>
+        <item name="colorSecondaryVariant">@color/last_pinky</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor" tools:targetApi="1" >?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.TheCheezery" parent="Base.Theme.TheCheezery" />
+</resources>
