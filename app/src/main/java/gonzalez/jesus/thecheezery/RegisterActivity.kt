@@ -8,15 +8,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_register)
 
-        val button: Button= findViewById(R.id.button_get_started) as Button
+        val button: Button = findViewById(R.id.sign_in_button) as Button
 
         button.setOnClickListener{
-            var intent: Intent = Intent(this, RegisterActivity::class.java)
+            var intent: Intent = Intent(this, MenuActivity::class.java)
             startActivity(intent)
         }
     }
