@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.TheCheezery" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.TheCheezery" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="colorPrimary">@color/very_pruple</item>
         <item name="colorPrimaryVariant">@color/less_pruple</item>
         <item name="colorOnPrimary">@color/dusty_white</item>
