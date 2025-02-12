@@ -15,10 +15,26 @@ class MenuActivity : AppCompatActivity() {
 
         var btnCold: Button = findViewById(R.id.buttton_cold_drinks) as Button
 
-        btnCold.setOnClickListener{
-            var intent: Intent = Intent(this, ProductosActivity::class.java)
+        var intent: Intent = Intent(this, ProductosActivity::class.java)
+
+        findViewById<Button>(R.id.buttton_cold_drinks).setOnClickListener {
+            intent.putExtra("categoria", "coldDrinks")
             startActivity(intent)
         }
 
+        findViewById<Button>(R.id.buttton_hot_drinks).setOnClickListener {
+            intent.putExtra("categoria", "hotDrinks")
+            startActivity(intent)
+        }
+
+        findViewById<Button>(R.id.button_sweets).setOnClickListener {
+            intent.putExtra("categoria", "sweets")
+            startActivity(intent)
+        }
+
+        findViewById<Button>(R.id.buttton_salties).setOnClickListener {
+            intent.putExtra("categoria", "salties")
+            startActivity(intent)
+        }
     }
 }
